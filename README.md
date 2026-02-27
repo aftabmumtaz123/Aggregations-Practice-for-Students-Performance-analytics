@@ -42,6 +42,13 @@ Code
    ```bash
    git clone https://github.com/aftabmumtaz123/Aggregations-Practice-for-Students-Performance-analytics.git
    cd Aggregations-Practice-for-Students-Performance-analytics
+
+## Installation & Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/aftabmumtaz123/Aggregations-Practice-for-Students-Performance-analytics
+   cd Aggregations-Practice-for-Students-Performance-analytics
 Install dependencies:
 
 bash
@@ -53,58 +60,3 @@ Start the server:
 bash
 node app.js
 The API will run on http://localhost:3000
-
-📡 API Endpoints
-GET /stats
-Returns analytics data:
-
-students: Sample student data
-
-totalMarks: Top 3 students by total marks
-
-highestAvgOverall: Classes ranked by average total marks
-
-failedStudents: Students failing in any subject
-
-totalStudentsByClass: Class-wise statistics
-
-Example Response:
-
-json
-{
-  "totalStudentsByClass": [
-    {
-      "_id": "10A",
-      "totalStudents": 25,
-      "avgEnglishMarks": 72.5,
-      "avgMathMarks": 80.2,
-      "avgScienceMarks": 77.8
-    }
-  ],
-  "students": [
-    {
-      "name": "Ali",
-      "class": "10A",
-      "marks": { "math": 85, "english": 78, "science": 90 }
-    }
-  ],
-  "totalMarks": [
-    { "name": "Ali", "totalMarks": 253 }
-  ],
-  "failedStudents": [],
-  "highestAvgOverall": [
-    { "_id": "10A", "avgTotal": 230.5 }
-  ]
-}
-📖 Learning Goals
-This project is designed to practice:
-
-MongoDB aggregation operators ($add, $avg, $group, $match, $sort, $limit)
-
-Building REST APIs with Express
-
-Structuring Node.js projects for analytics
-
-🤝 Contributing
-Pull requests are welcome!
-If you’d like to add new aggregation examples or extend the API, feel free to fork and submit improvements.
